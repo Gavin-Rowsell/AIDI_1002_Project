@@ -9,6 +9,19 @@ or model can be given potential values.
 Switch to the deployment branch of repository to view files used for deployment of ML model.
 
 
-First Model Access Link: https://predict-greenhouse-temp.herokuapp.com/
+First Model Access Link: https://predict-greenhouse-temperature.herokuapp.com/
 
-Second Model Access Link: 
+Second Model Access Link: https://forecast-greenhouse-temp.herokuapp.com/
+
+The second model has a more specific use case:
+
+When someone with a greenhouse wants to determine what their internal future temperature will be without using any control systems they can 
+use hourly forcast data (such as the data from the above weather network link) along with their current greenhouse temperature to predict 
+the change in the next hour. 
+
+Once they have this prediction they can continue to step forward by the hour to see how their greenhouses internal temperature will elvolve 
+over the couse of the day if they are not using any of their control systems. Due to certain conditions such as strong winds, pesticide use 
+in the area, acid rain, etc standard cooling methods (opening vents) might not be viable. In some cases, internal temperature can be proactivly 
+reduced before these conditions become a problem preventing damage crops may recieve from being outside their optimal temperature range. In 
+order to make these proactive decisions, the predictive model can be used to determine when the internal temperature is likely to excced a 
+target value. 
