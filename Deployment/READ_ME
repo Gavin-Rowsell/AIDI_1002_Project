@@ -3,6 +3,9 @@ Greenhouse temperature prediction model deployments
 First model used to predict temperature of a greenhouse without any control systems based on current outside conditions. 
 Second model used to predict temperature of greenhouse in 1 hour if no controls are used.
 
+Wind speeds should be given in Km/h
+All temperatures are in degrees Celsius
+
 Weather conditions to be used can be collected from: https://www.theweathernetwork.com/ca/hourly-weather-forecast/ontario/windsor
 or model can be given potential values.
 
