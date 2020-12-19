@@ -1,0 +1,2 @@
+First model used to predict current temperature based on current outside conditions, 
+second model used to predict temperature of greenhouse in 1 hour if no controls are used.
