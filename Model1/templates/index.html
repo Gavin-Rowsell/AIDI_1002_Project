@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Internal Greenhouse Temperature</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Time of Day (24h)" placeholder="Time of Day (24h)" required="required" /><br><br>
+        
+        <input type="text" name="Outside Temperature" placeholder="Outside Temperature" required="required" /><br><br>
+        <input type="text" name="Wind Speed" placeholder="Wind Speed" required="required" />
+        
+        <label for="Wind Direction">Choose a direction:</label>
+        <select id="Wind Direction" name="wind Direction">
+          <option value="N">North</option>
+          <option value="E">East</option>
+          <option value="S">South</option>
+          <option value="W">West</option>
+          <option value="NNE">North-Northeast</option>
+          <option value="NE">Northeast</option>
+          <option value="ENE">East-Northeast</option>
+          <option value="ESE">East-Southeast</option>
+          <option value="SE">Southeast</option>
+          <option value="SSE">South-Southeast</option>
+          <option value="SSW">South-Southwest</option>
+          <option value="SW">Southwest</option>
+          <option value="WSW">West-Southwest</option>
+          <option value="WNW">West-Nothwest</option>
+          <option value="NW">Northwest</option>
+          <option value="NNW">North-Northwest</option>
+          <option value="VAR">Varying</option>
+          <option selected value="CALM">No Wind</option>
+        </select><br><br>       
+        
+        <label for="Condition">Choose a condition:</label>
+        <select id="Condition" name="Condition">
+          <option selected value="Fair">Fair</option>
+          <option value="Mostly Cloudy">Mostly Cloudy</option>
+          <option value="Partly Cloudy">Partly Cloudy</option>
+          <option value="Cloudy">Cloudy</option>
+          <option value="Light Rain">Light Rain</option>
+          <option value="Thunder in the Vicinity">Thunder in the Vicinity</option>
+          <option value="Light Rain with Thunder">Light Rain with Thunder</option>
+          <option value="Mist">Mist</option>
+          <option value="T-Storm">T-Storm</option>
+          <option value="Thunder">Thunder</option>
+          <option value="Haze">Haze</option>
+          <option value="Heavy T-Storm">Heavy T-Storm</option>
+        </select><br><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
