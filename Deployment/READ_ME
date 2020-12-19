@@ -6,7 +6,7 @@ Second model used to predict temperature of greenhouse in 1 hour if no controls 
 Weather conditions to be used can be collected from: https://www.theweathernetwork.com/ca/hourly-weather-forecast/ontario/windsor
 or model can be given potential values.
 
-Switch to the deployment branch of repository to view files used for deployment of ML model.
+Switch to the deployment branch of repository to view files used for deployment of ML models.
 
 
 First Model Access Link: https://predict-greenhouse-temperature.herokuapp.com/
