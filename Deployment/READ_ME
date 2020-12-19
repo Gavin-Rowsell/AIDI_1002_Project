@@ -1,5 +1,13 @@
-First model used to predict current temperature based on current outside conditions, 
-second model used to predict temperature of greenhouse in 1 hour if no controls are used.
+Greenhouse temperature prediction model deployments
+
+First model used to predict temperature of a greenhouse without any control systems based on current outside conditions. 
+Second model used to predict temperature of greenhouse in 1 hour if no controls are used.
+
+Weather conditions to be used can be collected from: https://www.theweathernetwork.com/ca/hourly-weather-forecast/ontario/windsor
+or model can be given potential values.
+
+Switch to the deployment branch of repository to view files used for deployment of ML model.
+
 
 First Model Access Link: https://predict-greenhouse-temp.herokuapp.com/
 
